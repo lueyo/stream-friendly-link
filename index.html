@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/lueyo/video-share-web/refs/heads/main/lueyolinks.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Stream Friendly Link Encoder</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Stream Friendly Link Encoder</h1>
+        <h4>Formato que evita la censura de los chats de stream</h4>
+        <div class="tabs">
+            <button class="tab-button active" data-tab="decode">Decode</button>
+            <button class="tab-button" data-tab="encode">Encode</button>
+            
+        </div>
+        <div class="tab-content" id="encode">
+            <label for="inputUrlEncode">Enter URL to encode:</label>
+            <input type="text" id="inputUrlEncode" placeholder="Enter your URL here">
+            <button id="encodeBtn">Encode</button>
+            <label for="outputUrlEncode">Encoded Result:</label>
+            <p id="outputUrlEncode"></p>
+            <button id="copyEncodeBtn">📋️</button>
+        </div>
+        <div class="tab-content active" id="decode">
+            <label for="inputUrlDecode">Enter URL to decode:</label>
+            <input type="text" id="inputUrlDecode" placeholder="Enter encoded URL here">
+            <button id="decodeBtn">Decode</button>
+            <label for="outputUrlDecode">Decoded Result:</label>
+            <p id="outputUrlDecode"></p>
+            <button id="copyDecodeBtn">📋️</button>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

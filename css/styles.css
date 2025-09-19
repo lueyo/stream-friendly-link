@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    max-width: 90%;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.tabs {
+    display: flex;
+    margin-bottom: 20px;
+   
+}
+
+.tab-button {
+    flex: 1;
+    padding: 10px;
+    background-color: #e9ecef;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px 4px 0 0;
+}
+
+.tab-button.active {
+    background-color: white;
+    border-bottom: 2px solid #007bff;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 95%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#outputUrlEncode, #outputUrlDecode {
+    width: 95%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    min-height: 20px;
+    word-wrap: break-word;
+    display: none;
+}
+
+label[for="outputUrlEncode"], label[for="outputUrlDecode"] {
+    display: none;
+}
+
+#copyEncodeBtn, #copyDecodeBtn {
+    display: none;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.tab-button{
+    color: black;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+}
